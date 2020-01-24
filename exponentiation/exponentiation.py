@@ -5,7 +5,7 @@ not very efficient, could be improved.
 '''
 
 
-def norm_exp(num, pow):
+def exp(num, pow):
 
     value = 1
     for i in range(0,pow):
@@ -23,7 +23,7 @@ the idea, is to break down the number to its bits and exponentially double.
 def fast_exp(num,pow):
     value = 1
 
-    print(bin(pow)[2:])
+    print(bin(pow))
     for rec in bin(pow)[2:]:
         value = value**2
         if rec == "1": value *= num
@@ -35,4 +35,4 @@ def fast_exp(num,pow):
 
 if __name__ == '__main__':
 
-    print(norm_exp(2, 1000))
+    print(fast_exp(2, 10000000))
