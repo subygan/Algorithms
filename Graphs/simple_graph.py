@@ -24,14 +24,15 @@ class Graph(object):
                     edge_list.append({con,key})
         return edge_list
 
+
 if __name__ == "__main__":
 
-    g = { "a" : ["d"],
-          "b" : ["c"],
-          "c" : ["b", "c", "d", "e"],
-          "d" : ["a", "c"],
-          "e" : ["c"],
-          "f" : []
+    g = { "a": ["d"],
+          "b": ["c"],
+          "c": ["b", "c", "d", "e"],
+          "d": ["a", "c"],
+          "e": ["c"],
+          "f": []
         }
 
     graph = Graph(g)
