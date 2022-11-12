@@ -1,6 +1,7 @@
 ---
 title: Bloom filter
 emoji: 🌺
+layout: base
 description: Bloom filters are cool!
 date: 2022-11-12
 ---
