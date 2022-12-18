@@ -10,6 +10,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	l1v, l2v := 0, 0
 	for l1 != nil || l2 != nil {
 
+		// cases to handle, when, either l1/l2 are shorter than the other
 		if l1 == nil {
 			l1v = 0
 		} else {
@@ -21,9 +22,9 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2v = l2.Val
 		}
 
-		v := l1v + l2v + prev
+		v := l1v + l2v + prev // prev could've been named better as carry
 
-		fmt.Println(v)
+		//fmt.Println(v)
 		if v > 9 {
 			prev = 1
 		} else {
@@ -34,6 +35,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		}
 
 		myNode = myNode.Next
+
+		//updating to the next node
 		if l1 != nil {
 			l1 = l1.Next
 		}
@@ -41,7 +44,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2 = l2.Next
 		}
 		fmt.Println(l1, l2)
-		fmt.Println(l1 != nil && l2 != nil)
+		//fmt.Println(l1 != nil && l2 != nil)
 	}
 	if prev > 0 {
 		myNode.Next = &ListNode{
