@@ -7,3 +7,5 @@ date: 2010-11-12
 ---
 
 - Levenshtein automaton
+- paxos algorithm
+  - https://martinfowler.com/articles/patterns-of-distributed-systems/paxos.html
