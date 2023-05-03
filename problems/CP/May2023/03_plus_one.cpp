@@ -30,6 +30,7 @@ int main(){
     for(int j : plusOne(i)) {
         std::cout << j << ' ';
     };
-
-
 }
+
+// https://leetcode.com/problems/plus-one/
+// #easy
