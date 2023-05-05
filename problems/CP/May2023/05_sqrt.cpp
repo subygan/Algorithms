@@ -27,3 +27,6 @@ int sqrt(int x){
 int main(){
     cout<<sqrt(0);
 }
+
+// https://leetcode.com/problems/sqrtx/description/
+// easy
