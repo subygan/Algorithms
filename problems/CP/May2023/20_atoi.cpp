@@ -8,9 +8,7 @@ int myAtoi(string s) {
 
     double num = 0;
     int i = 0;
-    while(s[i] == ' '){
-        i++;
-    }
+    while(s[i] == ' ') i++;
     cout<<i<<endl;
     cout<<s<<endl;
     if (s[i]!='+' && s[i]!='-') s.insert(i,"+");
@@ -37,5 +35,3 @@ int main() {
     cout<<myAtoi(" +0000000000012345678");
 
 }
-
-//
