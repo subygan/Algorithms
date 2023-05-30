@@ -12,7 +12,8 @@ bool isPalindrome(string s) {
     string m;
     while (i < n) {
         int c = ::tolower(s[i]) - 'a';
-        if (c >= 0 && c <= 25) {
+//        cout<<s[i]<<c<<endl;
+        if ((c >= 0 && c <= 25) || (c<=-40 && c>=-49)) {
             m.push_back(tolower(s[i++]));
             continue;
         }
@@ -21,6 +22,7 @@ bool isPalindrome(string s) {
 //    cout << m<<endl;
     i = 0;
     n = m.length()-1;
+//    if (n ==0) return false;
 //    cout <<n<<endl;
     while (i <= n) {
 //        cout<<i<<" "<<n<<" "<<m[m.length()]<<endl;
@@ -34,7 +36,7 @@ bool isPalindrome(string s) {
 
 int main() {
 
-    cout<<isPalindrome("A man, a plan, a canal: Panama");
+    cout<<isPalindrome("0P");
 
 }
 
