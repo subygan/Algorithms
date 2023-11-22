@@ -7,7 +7,7 @@ int strStr(string haystack, string needle) {
 
     int diff = haystack.length() - needle.length();
 
-    for (int i = 0; i < diff+1; i++) {
+    for (int i = 0; i <= diff; i++) {
         if (haystack[i] == ni) {
             for (int j = 0; j < needle.length(); j++){
                 if (haystack[i+j] != needle[j]){

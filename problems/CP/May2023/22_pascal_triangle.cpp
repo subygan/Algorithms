@@ -17,8 +17,12 @@ vector<vector<int> > generate(int numRows) {
     return ans;
 }
 
-
 int main(){
+
+    for (auto i:generate(4)){
+        for (auto j:i) cout<<j<<" ";
+        cout<<endl;
+    }
 
 }
 
