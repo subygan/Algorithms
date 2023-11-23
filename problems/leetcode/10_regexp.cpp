@@ -1,35 +1,22 @@
-#include <stdio.h>
 #include <string>
-using namespace std;
 
-bool isMatch(string s, string p){
+class Solution {
+public:
+    bool isMatch(string s, string p) {
+        int n = s.length(), m = p.length();
+        bool dp[n+1][m+1];
+        memset(dp, false, sizeof(dp));
+        dp[0][0] = true;
 
-    char prev;
-
-    for (int i = 0; i < s.size(); i++){
-        string pat = p;
-        for (int j = i; j < p.size(); j++){
-            if (pat[j] == '.'){
-                prev = pat[j];
-                continue;
-            }
-            if (pat[j] == '*'){
-                if (prev == s[i]){
-                    continue;
-                }
-                else{
-                    break;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 1; j<= m; j++) {
+                if (p[j-1] == '*'){
+                    dp[i][j] = dp[i][j-2] || dp[i-1][j] && (s[i-1] == p[j-2] || p[j-2] == '.');
+                }else {
+                    dp[i][j] = dp[i-1][j-1] && (s[i-1] == p[j-1] || p[j-1] == '.');
                 }
             }
-
-
         }
+
     }
-
-
-}
-
-int main(){
-
-
-}
+};
