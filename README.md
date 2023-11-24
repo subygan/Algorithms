@@ -4,7 +4,7 @@ Safehouse to keep all the algorithms that I learn or come across.
 
 ## Project Epigram
 
-- [ ] 11/22 [Regex matching](https://leetcode.com/problems/regular-expression-matching/) #dynamic_programming
+- [x] 11/22 [Regex matching](https://leetcode.com/problems/regular-expression-matching/) #dynamic_programming
 - [ ] 11/23 [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) #dynamic_programming
 - [ ] 11/24 [Trap Rain Water](https://leetcode.com/problems/trapping-rain-water/) #dynamic_programming
 - [ ] 11/25 [Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) #binary_search
