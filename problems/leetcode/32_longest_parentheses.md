@@ -5,6 +5,7 @@ description: given a string containing just the characters '(' and ')', find the
 date: 2023-11-24
 layout: base
 ---
+problem link: https://leetcode.com/problems/longest-valid-parentheses/
 
 Typically, in the parentheses problem a stack is the obvious choice. I spent too much time, chasing a phantom solution by thinking about this as a DP problem and filling various arrays.
 
