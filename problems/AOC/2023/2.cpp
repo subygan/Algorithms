@@ -67,7 +67,6 @@ int main() {
     std::ifstream input("./2.txt");
     std::string line;
     std::vector<std::string> lines;
-
     int total = 0;
     while (std::getline(input, line)) {
 
