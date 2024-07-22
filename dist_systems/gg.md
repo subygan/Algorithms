@@ -50,7 +50,26 @@ I experimented a lot of ways to maintain response time, even went into an unnece
 
 I had to spin up multiple workers. So, that no msg is dropped. I had to receive all messages and retry and they succeed. I spun up multiple goroutines sharing the same channel, waiting to respond to messages and keep retrying until success. I was a little confused about the number of workers. Figured, 2x the number of nodes should work fine.
 
+I used the standard setup for spinning up multiple workers.
+
+```go
+	for i := 0; i < worker; i++ { //Start workers
+		go func() { // create a goroutine per worker
+            for {
+                select {
+                case msg := <-ch:
+                // do something with the message
+				case <-ctx.Done():
+				//	Handle ctx ending
+                }
+			}
+        }	
+```
+
 And it worked!!!❣️
+
+There was a bug, where the `sync.Mutex` lock was deferring and waiting until the end of the call stack and ending up choking the whole system. But, I ironed it out pretty quickly. Good reminder that locks need to be used sharp, localized, and atomic. Like, a Scalpel.     
+
 
 ### 3d. Efficient Broadcast 🚧
 
