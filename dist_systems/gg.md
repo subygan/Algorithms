@@ -71,6 +71,24 @@ And it worked!!!❣️
 There was a bug, where the `sync.Mutex` lock was deferring and waiting until the end of the call stack and ending up choking the whole system. But, I ironed it out pretty quickly. Good reminder that locks need to be used sharp, localized, and atomic. Like, a Scalpel.     
 
 
-### 3d. Efficient Broadcast 🚧
+### 3d. Efficient Broadcast 
+
+Efficient broadcast was kinda counterintuitive, because there were 25 nodes.
+I had to spawn completely new routines per request. instead of having workers per server as this model scales the number of workers based on the messages to be sent.
+
+"Efficient messages" also means that storing the messages efficiently. The biggest problem was that all my messages were in a huge append-only style list. Which made it very inefficient when sending because of the repeated messages. I converted that into a map so that I save every message only once.
+
+I also stored the topology and then filtered the nodes to send message based on that.
+
+I read through the whole maelstrom document from echo to efficient broadcast, to understand what was happening. the `store/latest` page is incredibly useful when each thing is understood properly. the messages.svg is just 🤌🏻 perfect.
+
+
+## 3e. Efficient Broadcast ++
+
+The challenge was to implement the system such that, there were 20 msgs-per-op and median latency below 1s and 99th percentile below 2s.
+
+This worked smoothly without even any code change because with problem 3d, I ran it with network partition and bought the response time much lower. My implementation still did it in under 150ms 95 %ile and 180ms 100%ile. I was pretty happy with the results.
+
+## 4. Grow Only Counter 🚧
 
 
