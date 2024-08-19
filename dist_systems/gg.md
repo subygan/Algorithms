@@ -2,7 +2,7 @@
 emoji: 🍃
 title: Gossip glomers
 description: Glomming, Jepsen, and other struggles with distributed systems
-date: 2024-07-22
+date: 2024-08-08
 layout: base
 ---
 
@@ -89,6 +89,22 @@ The challenge was to implement the system such that, there were 20 msgs-per-op a
 
 This worked smoothly without even any code change because with problem 3d, I ran it with network partition and bought the response time much lower. My implementation still did it in under 150ms 95 %ile and 180ms 100%ile. I was pretty happy with the results.
 
-## 4. Grow Only Counter 🚧
+## 4. Grow Only Counter
+
+Grow only counters usually have only one operation `add`. Everything else is used to keep it consistent.
+
+Maelstrom itself comes with a neat implementation for a [`sequentially consistent`](./sequential_consistency) key value store.
+
+The setup is such that, each node is given a KV and needs to always respond with the total of all values so far. For this, the nodes need to confer with each other ot know what values the other nodes have seen.
+
+As a developer I understand that Debugging needs going through a lot of logs. But in this case, I needed to understand maelstrom's logging system (which is spectacular BTW).
+
+But, reading it helped a lot `messages.svg` from the logs made it obvious that I forgot to instantiate the key with some value in the beginning and, maelstrom deviously was reading before it had written anything.
+
+The discussion logic between nodes was quite interesting to implement.
+
+
+
+
 
 
