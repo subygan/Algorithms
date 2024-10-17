@@ -11,7 +11,7 @@ layout: base
 I reused the functions provided at https://github.com/jepsen-io/maelstrom/tree/main/demo/go
 for interfaces.
 
-repo: https://github.com/suriya-ganesh/gg
+repo: https://github.com/subygan/gg
 
 
 ## 1. Echo
