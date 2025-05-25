@@ -2,7 +2,7 @@
 emoji: 🏃🏻
 title: CP4
 description: Reading Competitive Programming book 
-date: 2024-07-6
+date: 2024-07-06
 ---
 
 This is my collection of problems and solutions from the Competitive Programming book. I will be adding more problems and solutions as I read through the book.

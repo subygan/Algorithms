@@ -2,7 +2,7 @@
 emoji: ⚙️
 title: Chapter 1 exercises
 description: Chapter 1 exercises from CP4
-date: 2024-07-6
+date: 2024-07-06
 layout: base
 ---
 
