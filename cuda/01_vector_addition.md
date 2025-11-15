@@ -3,7 +3,7 @@ emoji: ✚
 title: Vector Addition
 layout: base
 description: Adding two similar shaped vectors
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 The question was

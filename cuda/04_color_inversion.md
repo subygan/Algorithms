@@ -3,7 +3,7 @@ emoji: ✚
 title: Color inversion
 description: Inverting color in an image.
 layout: base
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 

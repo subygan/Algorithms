@@ -10,3 +10,8 @@ Optimizing for Concurency has always been painful for a ton of reasons. SIMD is 
 This is just a way to segment compute by the number of available threads and then vastly increasing the number of threads. instead of making it dependent on the data, which could be dynamic and constrain hardware optimization.
 
 This has worked incredibly well for at least one company who seems to be seeing no end to the growing.
+
+
+### atomicAdd(valueaddress,increment)
+
+this is a function that syncs a value across all threads and increments it by a value. quite helpful when trying to sync a value across different threads. but when the process is very shallow (eg. add values in a list) it's not very useful becuase instead of doing any useful work, all the threads are simply waiting on each other.

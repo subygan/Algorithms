@@ -3,7 +3,7 @@ emoji: ◀️
 title: Reverse Array
 layout: base
 description: Reverse and array
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 

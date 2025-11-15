@@ -3,7 +3,7 @@ emoji: T
 title: Matrix Transpose
 layout: base
 description: Problem transposing two matrices
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 

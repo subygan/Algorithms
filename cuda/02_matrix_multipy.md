@@ -3,7 +3,7 @@ emoji: X
 title: Matrix Multiply
 layout: base
 description: multiplying two simple matrices
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 The tricky part in this was that, I took some time to intuit that each thread should associate to each value in the output matrix.

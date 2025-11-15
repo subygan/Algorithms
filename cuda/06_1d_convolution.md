@@ -3,7 +3,7 @@ emoji: []
 title: 1D convolution
 layout: base
 description: convolving an 1D matrix
-date: 2010-11-12
+date: 2025-11-12
 ---
 
 
