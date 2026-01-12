@@ -2,6 +2,7 @@
 title: Min in Rotated Array 
 date: 2023-11-26
 layout: base
+tags: ["tech", "programming"]
 ---
 
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:

@@ -4,6 +4,7 @@ title: Gossip glomers
 description: Glomming, Jepsen, and other struggles with distributed systems
 date: 2024-08-08
 layout: base
+tags: ["tech", "systems"]
 ---
 
 

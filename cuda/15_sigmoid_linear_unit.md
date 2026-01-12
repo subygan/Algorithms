@@ -4,6 +4,7 @@ title: SiLu
 layout: base
 description: count
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 

@@ -4,6 +4,7 @@ title: Matrix Multiply
 layout: base
 description: multiplying two simple matrices
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 The tricky part in this was that, I took some time to intuit that each thread should associate to each value in the output matrix.

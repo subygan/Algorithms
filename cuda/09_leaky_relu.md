@@ -4,6 +4,7 @@ title: Leaky ReLu
 layout: base
 description: Applying ReLu to an array
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 

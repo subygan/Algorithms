@@ -4,6 +4,7 @@ title: Matrix Addition
 layout: base
 description: add two matrices
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 ```c++

@@ -4,6 +4,7 @@ title: 1D convolution
 layout: base
 description: convolving an 1D matrix
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 

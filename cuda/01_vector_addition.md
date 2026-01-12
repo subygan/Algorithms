@@ -4,6 +4,7 @@ title: Vector Addition
 layout: base
 description: Adding two similar shaped vectors
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 The question was

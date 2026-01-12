@@ -4,6 +4,7 @@ title: Longest Valid Parentheses
 description: given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 date: 2023-11-24
 layout: base
+tags: ["tech", "programming"]
 ---
 problem link: https://leetcode.com/problems/longest-valid-parentheses/
 

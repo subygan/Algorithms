@@ -4,6 +4,7 @@ title: Color inversion
 description: Inverting color in an image.
 layout: base
 date: 2025-11-12
+tags: ["tech", "programming", "machine-learning"]
 ---
 
 

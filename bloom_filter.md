@@ -4,6 +4,7 @@ emoji: 🌺
 layout: base
 description: Bloom filters are cool!
 date: 2022-11-12
+tags: ["tech"]
 ---
 
 Bloom filters have nothing to do with flowers (despite the blog emoji 🥸). It was conceived by Burton howard Bloom. This is a _Space-efficient probablistic data structure_. In Bloom filter false positives are very much possible, but false-negatives are not possible (i.e.) a query either returns, "possibly in set" or "definitely not". So, when a bloom filter returns "no" you can believe it, if it returns "maybe" you cannot. And it is very very efficient.

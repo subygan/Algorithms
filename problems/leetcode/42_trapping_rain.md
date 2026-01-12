@@ -3,6 +3,7 @@ emoji: 🌧️
 title: 42. Trapping Rain Water
 date: 2023-11-26
 layout: base
+tags: ["tech", "programming"]
 ---
 
 ## Problem Statement
