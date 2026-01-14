@@ -1,6 +1,6 @@
 ---
 emoji: []
-title: 1D convolution
+title: 1d convolution
 layout: base
 description: convolving an 1D matrix
 date: 2025-11-12

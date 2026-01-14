@@ -1,5 +1,5 @@
 ---
-title: Min in Rotated Array 
+title: min in rotated array 
 date: 2023-11-26
 layout: base
 tags: ["tech", "programming"]
@@ -11,7 +11,7 @@ Suppose an array of length n sorted in ascending order is rotated between 1 and 
 [0,1,4,4,5,6,7] if it was rotated 7 times.
 
 
-## Solution
+## solution
 
 On first look, it is easy to observe this should only be O(n).
 But, since it is a sorted array, ideally we should be able to do this in O(log n).

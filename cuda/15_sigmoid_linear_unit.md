@@ -1,6 +1,6 @@
 ---
 emoji: 🔄
-title: SiLu
+title: silu
 layout: base
 description: count
 date: 2025-11-12

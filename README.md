@@ -1,8 +1,8 @@
-# Algorithms
+# algorithms
 
 Safehouse to keep all the algorithms that I learn or come across.
 
-## Project Epigram
+## project epigram
 
 - [x] 11/22 [Regex matching](https://leetcode.com/problems/regular-expression-matching/) #dynamic_programming
 - [x] 11/23 [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) #dynamic_programming

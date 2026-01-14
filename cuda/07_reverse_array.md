@@ -1,6 +1,6 @@
 ---
 emoji: ◀️
-title: Reverse Array
+title: reverse array
 layout: base
 description: Reverse and array
 date: 2025-11-12

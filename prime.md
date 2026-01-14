@@ -1,6 +1,6 @@
 ---
 emoji: ⓱
-title: Prime number library for rust
+title: prime number library for rust
 description: Working with large prime numbers is really annoying with rust.
 date: 2024-10-16
 layout: base

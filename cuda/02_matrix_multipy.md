@@ -1,6 +1,6 @@
 ---
 emoji: X
-title: Matrix Multiply
+title: matrix multiply
 layout: base
 description: multiplying two simple matrices
 date: 2025-11-12

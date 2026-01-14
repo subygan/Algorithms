@@ -1,6 +1,6 @@
 ---
 emoji: ✚
-title: Color inversion
+title: color inversion
 description: Inverting color in an image.
 layout: base
 date: 2025-11-12

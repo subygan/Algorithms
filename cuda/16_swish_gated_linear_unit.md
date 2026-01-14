@@ -1,6 +1,6 @@
 ---
 emoji: 🔄
-title: SwiLu
+title: swilu
 layout: base
 description: Swish Gated Linear Unit
 date: 2025-11-12

@@ -1,6 +1,6 @@
 ---
 emoji: ◀️
-title: Matrix Addition
+title: matrix addition
 layout: base
 description: add two matrices
 date: 2025-11-12

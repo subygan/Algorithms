@@ -1,6 +1,6 @@
 ---
 emoji: ◀️
-title: Leaky ReLu
+title: leaky relu
 layout: base
 description: Applying ReLu to an array
 date: 2025-11-12

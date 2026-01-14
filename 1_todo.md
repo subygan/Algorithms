@@ -1,5 +1,5 @@
 ---
-title: TODO
+title: todo
 emoji: 📝
 layout: base
 description: List of algorithms To read up on

@@ -1,6 +1,6 @@
 ---
 emoji: 🏃🏻
-title: CP4
+title: cp4
 description: Reading Competitive Programming book 
 date: 2024-07-06
 ---

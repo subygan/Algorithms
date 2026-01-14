@@ -1,6 +1,6 @@
 ---
 emoji: 🍃
-title: Gossip glomers
+title: gossip glomers
 description: Glomming, Jepsen, and other struggles with distributed systems
 date: 2024-08-08
 layout: base
@@ -15,15 +15,15 @@ for interfaces.
 repo: https://github.com/subygan/gg
 
 
-## 1. Echo
+## 1. echo
 
 This was a gentle intro to maelstrom and it's tools. TBF the message passing using RPC was pretty interesting. Implementing the `read()` and `write()` functions and then handing it off to the maelstrom Node made it work.
 
-## 2. Unique Id Generation
+## 2. unique id generation
 
 This was fairly simple enough, I did a `uuid.NewSring()` with every request. There wasn't even any locks involved!!
 
-## 3a. Single Broadcast.
+## 3a. single broadcast.
 
 With single broadcast, there is an assumption that there is one other node that is present. And messages need to be passed between them the signatures to implement were,
 
@@ -35,13 +35,13 @@ With single broadcast, there is an assumption that there is one other node that 
 
 One interesting bug that I faced was that, golang did not copy the messages if I just did `resp.m := messages` the messages that I had were lost at a later time, because I was only storing pointers. I had to do `resp.m = make([]string, len(messages))` So that I copy all the messages from in-memory to the response to generate the response.
 
-## 3b. Multi Broadcast.
+## 3b. multi broadcast.
 
 Multi Broadcast is a challenge where 5 nodes are discussing topology, and messages withing themselves. The signatures to implement were the same as before, but the implementation was a bit more complex.
 I now introduced locks because, if multiple nodes were talking with each other, then overlapping requests could cause missed data. These locks were used, when I write the message to inmemory, and when I read the message from inmemory. I used a `sync.Mutex` to implement this. But, I could used a `sync.RWMutex` to make it more efficient. so that when Reading, I don't hold a readlock. Seemed like an overkill for this implementation, as I was not optimizing for performance.
 
 
-## 3c. Multi Broadcast with network partitions.
+## 3c. multi broadcast with network partitions.
 
 This was the most challenging exercise so far, because I had very vague hypothesis on how to get around, network partitions.
 
@@ -72,7 +72,7 @@ And it worked!!!❣️
 There was a bug, where the `sync.Mutex` lock was deferring and waiting until the end of the call stack and ending up choking the whole system. But, I ironed it out pretty quickly. Good reminder that locks need to be used sharp, localized, and atomic. Like, a Scalpel.     
 
 
-### 3d. Efficient Broadcast 
+### 3d. efficient broadcast 
 
 Efficient broadcast was kinda counterintuitive, because there were 25 nodes.
 I had to spawn completely new routines per request. instead of having workers per server as this model scales the number of workers based on the messages to be sent.
@@ -84,13 +84,13 @@ I also stored the topology and then filtered the nodes to send message based on 
 I read through the whole maelstrom document from echo to efficient broadcast, to understand what was happening. the `store/latest` page is incredibly useful when each thing is understood properly. the messages.svg is just 🤌🏻 perfect.
 
 
-## 3e. Efficient Broadcast ++
+## 3e. efficient broadcast ++
 
 The challenge was to implement the system such that, there were 20 msgs-per-op and median latency below 1s and 99th percentile below 2s.
 
 This worked smoothly without even any code change because with problem 3d, I ran it with network partition and bought the response time much lower. My implementation still did it in under 150ms 95 %ile and 180ms 100%ile. I was pretty happy with the results.
 
-## 4. Grow Only Counter
+## 4. grow only counter
 
 Grow only counters usually have only one operation `add`. Everything else is used to keep it consistent.
 

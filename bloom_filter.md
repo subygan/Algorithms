@@ -1,5 +1,5 @@
 ---
-title: Bloom filter
+title: bloom filter
 emoji: 🌺
 layout: base
 description: Bloom filters are cool!
@@ -21,6 +21,6 @@ This is used in [chromium](https://chromium.googlesource.com/chromium/blink/+/re
 
 
 
-### Refs:
+### refs:
 - [https://llimllib.github.io/bloomfilter-tutorial/](https://llimllib.github.io/bloomfilter-tutorial/)
 - [Bloom filters in chromium](https://web.archive.org/web/20180814074719/http://blog.alexyakunin.com:80/2010/03/nice-bloom-filter-application.html)

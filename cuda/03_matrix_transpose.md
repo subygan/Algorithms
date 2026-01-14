@@ -1,6 +1,6 @@
 ---
 emoji: T
-title: Matrix Transpose
+title: matrix transpose
 layout: base
 description: Problem transposing two matrices
 date: 2025-11-12

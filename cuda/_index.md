@@ -1,6 +1,6 @@
 ---
 emoji: 🧵 
-title: Cuda
+title: cuda
 description: Solving CuDa problems.
 date: 2023-03-14
 ---
@@ -12,6 +12,6 @@ This is just a way to segment compute by the number of available threads and the
 This has worked incredibly well for at least one company who seems to be seeing no end to the growing.
 
 
-### atomicAdd(valueaddress,increment)
+### atomicadd(valueaddress,increment)
 
 this is a function that syncs a value across all threads and increments it by a value. quite helpful when trying to sync a value across different threads. but when the process is very shallow (eg. add values in a list) it's not very useful becuase instead of doing any useful work, all the threads are simply waiting on each other.

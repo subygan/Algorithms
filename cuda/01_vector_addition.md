@@ -1,6 +1,6 @@
 ---
 emoji: ✚
-title: Vector Addition
+title: vector addition
 layout: base
 description: Adding two similar shaped vectors
 date: 2025-11-12

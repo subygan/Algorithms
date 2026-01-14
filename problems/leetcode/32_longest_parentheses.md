@@ -1,6 +1,6 @@
 ---
 emoji: ()
-title: Longest Valid Parentheses
+title: longest valid parentheses
 description: given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 date: 2023-11-24
 layout: base

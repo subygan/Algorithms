@@ -1,5 +1,5 @@
 ---
-title: Algorithms
+title: algorithms
 emoji: ⚙️
 description: Cool Algorithms I find around the web
 ---

@@ -1,6 +1,6 @@
 ---
 emoji: ◀️
-title: ReLu
+title: relu
 layout: base
 description: Applying ReLu to an array
 date: 2025-11-12

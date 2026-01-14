@@ -1,6 +1,6 @@
 ---
 emoji: 🔄
-title: Count 2d Array Element
+title: count 2d array element
 layout: base
 description: count
 date: 2025-11-12
